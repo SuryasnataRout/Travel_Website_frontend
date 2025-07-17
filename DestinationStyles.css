@@ -1,0 +1,145 @@
+/* Global body settings */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Destination wrapper */
+.destination {
+  margin: 4rem 6rem;
+}
+
+/* Title styles */
+.destination h1 {
+  font-size: 2.8rem;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.destination p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #555;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Destination block layout */
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+/*.first-des-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}*/
+
+/*.sec-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}*/
+
+.sec-des-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem; 
+}
+
+/* Left-side text */
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+.des-text h2 {
+  font-size: 1.8rem;
+  font-family: 'Cinzel', serif;
+  padding-bottom: 1rem;
+  color: #1e3d59;
+}
+
+/* Right-side image box */
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+/* Overlapping effect for second image */
+.image img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+
+  .first-des {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+
+  .first-des-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+}
+
+.sec-des{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+}
+
+.sec-des-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+}
+
+  .des-text {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+
+  .image img {
+    height: 250px;
+  }
+}

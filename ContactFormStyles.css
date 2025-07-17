@@ -1,0 +1,41 @@
+.from{
+    margin: 4rem 6rem;
+    color: black;
+}
+.from form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.from input{
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+}
+
+.from textarea{
+    padding:  1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+}
+
+.from button{
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.from button:hover {
+    background-color: #444;
+}

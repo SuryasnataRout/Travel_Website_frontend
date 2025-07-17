@@ -1,0 +1,45 @@
+.from {
+  margin: 4rem 6rem;
+  color: black;
+}
+
+.from h1 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.from form {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.from input {
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #2a2a2a;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.from button {
+  padding: 0.8rem 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.from button:hover {
+  background-color: #005fa3;
+}
+

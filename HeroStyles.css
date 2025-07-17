@@ -1,0 +1,69 @@
+/* in global CSS like index.css or App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Only cover first screen fold */
+  overflow: hidden;
+}
+.hero-mid {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Only cover first screen fold */
+  overflow: hidden;
+  filter: brightness(0.98); /* brighten the image */
+}
+.hero-mid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio and covers the container */
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures it fills without stretching */
+  filter: brightness(70%); /* Optional: darkens image for better text visibility */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align:center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.hero-text .show {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.hero-text .hide{
+  display: none;
+}
+
+.hero-text a:hover {
+  background-color: #f0f0f0;
+}
